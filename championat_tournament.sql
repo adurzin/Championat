@@ -42,7 +42,7 @@ CREATE TABLE `tournament` (
 
 LOCK TABLES `tournament` WRITE;
 /*!40000 ALTER TABLE `tournament` DISABLE KEYS */;
-INSERT INTO `tournament` VALUES (1,'eius',2,118),(2,'eos',5,493),(3,'doloribus',3,162),(4,'alias',2,89),(5,'rem',5,131),(6,'deserunt',3,43),(7,'itaque',5,400),(8,'tempore',1,498),(9,'sunt',3,161),(10,'et',1,51),(11,'inventore',4,495),(12,'dolorem',3,24),(13,'at',1,81),(14,'explicabo',4,94),(15,'vel',1,355),(16,'architecto',3,80),(17,'beatae',5,77),(18,'id',2,60),(19,'tempora',2,117),(20,'maiores',4,400);
+INSERT INTO `tournament` VALUES (1,'NBA',2,118),(2,'APL',5,493),(3,'Formula-1',3,162),(4,'VTB LEAGUE',2,89),(5,'RPL',5,131),(6,'Rally',3,43),(7,'IPL',5,400),(8,'KHL',1,498),(10,'NHL',1,51),(11,'WIMBLEDON',4,495),(13,'AHL',1,81),(14,'OLYMPIC',4,94);
 /*!40000 ALTER TABLE `tournament` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-26 22:27:51
+-- Dump completed on 2021-07-27 16:51:47
