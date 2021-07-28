@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `championat` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `championat`;
 -- MySQL dump 10.13  Distrib 8.0.25, for Win64 (x86_64)
 --
 -- Host: localhost    Database: championat
@@ -35,7 +37,7 @@ CREATE TABLE `type_sport` (
 
 LOCK TABLES `type_sport` WRITE;
 /*!40000 ALTER TABLE `type_sport` DISABLE KEYS */;
-INSERT INTO `type_sport` VALUES (1,' hockey'),(2,' basketball'),(3,' auto'),(4,' tennis'),(5,'football');
+INSERT INTO `type_sport` VALUES (1,' hockey'),(2,' basketball'),(4,' tennis'),(5,'football');
 /*!40000 ALTER TABLE `type_sport` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-27 16:51:46
+-- Dump completed on 2021-07-28 16:37:31
