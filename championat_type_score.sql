@@ -18,34 +18,27 @@ USE `championat`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `tournament`
+-- Table structure for table `type_score`
 --
 
-DROP TABLE IF EXISTS `tournament`;
+DROP TABLE IF EXISTS `type_score`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `tournament` (
+CREATE TABLE `type_score` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `type_sport_id` int unsigned NOT NULL,
-  `media_id` int unsigned DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `idtournaments_UNIQUE` (`id`),
-  KEY `fk_tournaments_type_sport_idx` (`type_sport_id`),
-  KEY `fk_tournament_media1_idx` (`media_id`),
-  CONSTRAINT `fk_tournament_media1` FOREIGN KEY (`media_id`) REFERENCES `media` (`id`),
-  CONSTRAINT `fk_tournaments_type_sport` FOREIGN KEY (`type_sport_id`) REFERENCES `type_sport` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `name` varchar(15) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tournament`
+-- Dumping data for table `type_score`
 --
 
-LOCK TABLES `tournament` WRITE;
-/*!40000 ALTER TABLE `tournament` DISABLE KEYS */;
-INSERT INTO `tournament` VALUES (1,'NBA',2,118),(2,'APL',5,493),(4,'VTB LEAGUE',2,89),(5,'RPL',5,131),(7,'IPL',5,400),(8,'KHL',1,498),(10,'NHL',1,51),(11,'WIMBLEDON',4,495),(13,'AHL',1,81),(14,'OLYMPIC',4,94);
-/*!40000 ALTER TABLE `tournament` ENABLE KEYS */;
+LOCK TABLES `type_score` WRITE;
+/*!40000 ALTER TABLE `type_score` DISABLE KEYS */;
+INSERT INTO `type_score` VALUES (1,'team_1_WIN'),(2,'team_2_WIN'),(3,'sportsman_1_WIN'),(4,'sportsman_2_WIN'),(5,'draw');
+/*!40000 ALTER TABLE `type_score` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -57,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-28 16:38:19
+-- Dump completed on 2021-07-28 23:09:19
