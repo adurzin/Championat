@@ -18,28 +18,12 @@ USE `championat`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `type_media`
+-- Dumping events for database 'championat'
 --
 
-DROP TABLE IF EXISTS `type_media`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `type_media` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `title` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 --
--- Dumping data for table `type_media`
+-- Dumping routines for database 'championat'
 --
-
-LOCK TABLES `type_media` WRITE;
-/*!40000 ALTER TABLE `type_media` DISABLE KEYS */;
-INSERT INTO `type_media` VALUES (1,'image'),(2,' music'),(3,' video');
-/*!40000 ALTER TABLE `type_media` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -50,4 +34,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-29 22:20:36
+-- Dump completed on 2021-07-29 22:20:37
